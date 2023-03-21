@@ -1,0 +1,150 @@
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #007bff;
+}
+.left-block {
+    padding: 8px 40px;
+    cursor: pointer;
+}
+.left-block a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.left-block span {
+    color: rgb(229, 4, 4);
+    font-weight: bold;
+    font-size: 20px;
+}
+.right-block {
+    padding: 6px 30px;
+    cursor: pointer;
+}
+.right-block .logout {
+    color: #fff;
+    font-size: 16px;
+}
+.back {
+    margin: 10px 20px;
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #999;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.back i {
+    display: inline-block;
+}
+.back p {
+    display: inline-block;
+}
+.text-update {
+    text-align: center;
+    height: 48px;
+    margin-bottom: 40px;
+}
+.text-update p {
+    font-size: 34px;
+}
+.pass-user {
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+.pass-user p {
+    font-size: 2em;
+    border-left: 5px solid dodgerblue;
+    padding: 10px;
+    color: #000;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.pass-user .change-pass [type='button'] {
+    background: dodgerblue;
+    color: #fff;
+    border: #fff;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.pass-user .change-pass:hover [type='button'] {
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+.update-user {
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+.update-user p {
+    font-size: 2em;
+    border-left: 5px solid dodgerblue;
+    padding: 10px;
+    color: #000;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.update-user .inputbox {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+.update-user .inputbox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+.update-user .inputbox:last-child {
+    margin-bottom: 0;
+}
+.update-user .inputbox span {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+}
+.update-user .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+    transform: translateX(-13px) translateY(-35px);
+    font-size: 1em;
+}
+.update-user .inputbox [type='button'] {
+    width: 25%;
+    background: dodgerblue;
+    color: #fff;
+    border: #fff;
+    cursor: pointer;
+}
+.update-user .inputbox:hover [type='button'] {
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+}

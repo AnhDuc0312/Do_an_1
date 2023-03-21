@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topic">
+        <h3>ĐỒ ÁN I: WEBSITE GIÁM SÁT HÀNH TRÌNH XE</h3>
+    </div>
+    <div class="login-page">
+      <div class="form">
+        <form class="register-form">
+          <input type="text" placeholder="name"/>
+          <input type="password" placeholder="password"/>
+          <input type="text" placeholder="email address"/>
+          <button>create</button>
+          <p class="message">Already registered? <a href="#">Sign In</a></p>
+        </form>
+        <form class="login-form">
+          <input type="text" placeholder="Tên đăng nhập"/>
+          <input type="password" placeholder="Mật khẩu"/>
+          <button>login</button>
+          <p class="message">Chưa có tài khoản? <a href="#">Tạo tài khoản</a></p>
+        </form>
+      </div>
+    </div>
+    <script>
+      $('.message a').click(function(){
+      $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+      });
+    </script>
+</body>
+</html>
